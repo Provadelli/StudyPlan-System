@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ciclo UERJ — Plano de Estudos</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,500&family=Public+Sans:wght@400;500;600;700&family=Caveat:wght@600&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <span class="eyebrow">reta longa &mdash; sem pesar</span>
+    <h1>Ciclo de Português para a discursiva da UERJ</h1>
+    <p class="lede">Classes Gramaticais e Função Sintática revezando dia a dia, em sessões de 30&ndash;40&nbsp;min. Um ciclo de 4 semanas cobre os dois checklists inteiros; depois entra uma fase de consolidação que você repete até a prova.</p>
+
+    <div class="progress-card">
+      <div class="ring" id="ring" data-label="0%"></div>
+      <div class="progress-text">
+        <strong id="progress-count">0 de 24 sessões concluídas</strong>
+        <span>O progresso fica salvo neste navegador.</span>
+      </div>
+      <div class="legend">
+        <span><i style="background:var(--teal)"></i>Classes Gramaticais</span>
+        <span><i style="background:var(--amber)"></i>Função Sintática</span>
+        <span><i style="background:var(--red)"></i>prioridade máxima</span>
+      </div>
+    </div>
+
+    <div class="note">
+      <h2>O modelo de resposta, para toda sessão</h2>
+      <ol>
+        <li><strong>Identificar</strong> &mdash; "a palavra X é um pronome demonstrativo" / "é objeto direto".</li>
+        <li><strong>Justificar</strong> &mdash; "porque acompanha/retoma Y" / "porque completa o verbo Z sem preposição".</li>
+        <li><strong>Explicar o efeito</strong> &mdash; o que esse emprego destaca, retoma ou contrasta no texto.</li>
+      </ol>
+    </div>
+  </header>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Semanas 1&ndash;4 &mdash; os dois checklists, um dia de cada vez</h2>
+      <span class="sub">6 dias/semana · 30&ndash;40 min</span>
+    </div>
+
+    <div id="weeks"></div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Semana 5 em diante &mdash; consolidação (repete até a prova)</h2>
+    </div>
+    <div class="consolidacao">
+      <p>Depois que o ciclo acima fecha, troque sessão nova por manutenção. O mesmo tempo por dia, mas metade do conteúdo é revisão e metade é prática — é o que fixa para a discursiva.</p>
+      <ul>
+        <li><strong>2x por semana:</strong> 2&ndash;3 questões discursivas reais da UERJ, aplicando o modelo identificar → justificar → explicar.</li>
+        <li><strong>2x por semana:</strong> revisão relâmpago (10 min) de um ponto fraco — comece pelas diferenças que a UERJ mais cobra: adjunto adnominal × complemento nominal, objeto indireto × complemento nominal, predicativo × adjunto adnominal, aposto × vocativo.</li>
+        <li><strong>1x por semana:</strong> volte a um subtema de prioridade máxima do ciclo (pronomes, verbos, conjunções, sujeito, objetos, predicativo) só para não enferrujar.</li>
+        <li><strong>Reserva:</strong> se sobrar tempo antes da prova, repita o ciclo inteiro do zero — a segunda passada é bem mais rápida.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="block">
+    <div class="block-head">
+      <h2>Banco de questões &mdash; 15 por semana</h2>
+      <span class="sub">responda primeiro, depois abra o gabarito</span>
+    </div>
+    <div id="questions"></div>
+  </section>
+
+  <footer>24 sessões · marque o que já fez · o ciclo pode recomeçar quantas vezes quiser antes da prova</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
